@@ -5,6 +5,8 @@ const server = express();
 
 server.use(express.json());
 
+const port = process.env.PORT || 5000;
+
 let users = [
     {
      id: 1, // hint: use the shortid npm package to generate it
